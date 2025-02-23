@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">ChillくんのPortfolio</h1>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#first-view">概要</a></li>
+                    <li><a href="philosophy.html">理念</a></li>
+                    <li><a href="career.html">経歴</a></li>
+                    <li><a href="works.html">実績</a></li>
+                    <li><a href="index.html#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="first-view" class="first-view">
+            <div class="background-design">
+                <div class="geometric-pattern"></div>
+                <div class="dots-overlay"></div>
+                <div class="gradient-overlay"></div>
+                <div class="animated-lines"></div>
+            </div>
+            <div class="container">
+                <h2 class="section-title">人々の潜在を覚醒させる</h2>
+                <p class="section-text">20代で東証1部上場企業のCOOになる</p>
+            </div>
+        </section>
+
+        <section id="philosophy" class="philosophy section">
+            <div class="container">
+                <h2 class="section-title">信念</h2>
+                <div class="section-content">
+                    <div class="section-image">
+                        <img src="杉本雄飛.jpg" 
+                             alt="Philosophy image" 
+                             data-url="philosophy.html"
+                             aria-label="理念の詳細を見る"
+                             class="clickable-image">
+                    </div>
+                    <div class="section-text-content">
+                        <h3>人々の潜在を覚醒させる</h3>
+                        <h4>-この信念を思うようになったきっかけ-</h4>
+                        <h4>-経験していく中で定まってきた"人々"の定義-</h4>
+                        <a href="philosophy.html" class="detail-button">CHILLくんを詳しく見てみる</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career" class="career section">
+            <div class="container">
+                <h2 class="section-title">これまでのキャリアパス</h2>
+                <div class="section-content section-content-right">
+                    <div class="section-image">
+                        <img src="杉本雄飛.jpg" 
+                             alt="Career image" 
+                             data-url="career.html"
+                             aria-label="経歴の詳細を見る"
+                             class="clickable-image">
+                    </div>
+                    <div class="section-text-content">
+                        <h3>大学5年間で培ったものたち</h3>
+                        <a href="career.html" class="detail-button">CHILLくんを詳しく見てみる</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works section">
+            <div class="container">
+                <h2 class="section-title">実績</h2>
+                <div class="works-grid">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="work1.jpg" 
+                                 alt="Webアプリケーション開発" 
+                                 data-url="works/web-app.html"
+                                 aria-label="Webアプリケーション開発の詳細を見る"
+                                 class="clickable-image">
+                        </div>
+                        <div class="work-content">
+                            <h3>エグゼクティブコーチング</h3>
+                            <p>人事評価制度の構築を通じて売上高208%増加、従業員満足度195%向上</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="work2.jpg" 
+                                 alt="UIデザイン" 
+                                 data-url="works/ui-design.html"
+                                 aria-label="UIデザインの詳細を見る"
+                                 class="clickable-image">
+                        </div>
+                        <div class="work-content">
+                            <h3>人材育成開発</h3>
+                            <p>起業家育成コミュニティで100名以上の優秀な学生や新卒を教育し、中には代表取締社長を始め、取締役やCOOを輩出する</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="work3.jpg" 
+                                 alt="モバイルアプリ開発" 
+                                 data-url="works/mobile-app.html"
+                                 aria-label="モバイルアプリ開発の詳細を見る"
+                                 class="clickable-image">
+                        </div>
+                        <div class="work-content">
+                            <h3>GPTs×GAS開発</h3>
+                            <p>人材紹介事業用のGPTs×GAS開発を行い、作業時間を80~90%カットに成功</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-more">
+                    <a href="works.html" class="detail-button" aria-label="すべての実績を見る">
+                        もっとCHILLの力を見てみたい
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-text">お気軽にご連絡ください</p>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">お名前<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required
+                               aria-required="true" aria-describedby="nameError">
+                        <div id="nameError" class="error-message" aria-live="polite"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required
+                               aria-required="true" aria-describedby="emailError">
+                        <div id="emailError" class="error-message" aria-live="polite"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">電話番号（任意）</label>
+                        <input type="tel" id="phone" name="phone"
+                               aria-describedby="phoneError">
+                        <div id="phoneError" class="error-message" aria-live="polite"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">件名<span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required
+                               aria-required="true" aria-describedby="subjectError">
+                        <div id="subjectError" class="error-message" aria-live="polite"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容<span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required
+                                  aria-required="true" aria-describedby="messageError"></textarea>
+                        <div id="messageError" class="error-message" aria-live="polite"></div>
+                    </div>
+
+                    <button type="submit" class="submit-button">送信する</button>
+                </form>
+                <div id="formSuccess" class="form-success" role="alert" hidden>
+                    <h3>送信完了</h3>
+                    <p>お問い合わせありがとうございます。<br>内容を確認次第、ご連絡させていただきます。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
